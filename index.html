@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Dana
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          dana@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764533
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommentations</a>
+          
+         
+      </ul>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="C:\Users\vrshe\OneDrive\Desktop\html_finalProject\html_finalprojimages\images.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Dana! 
+          </h1>
+          <p>
+            I am a Java developer with 7 years of experience .
+            My expertise extends to a wide range of Java technologies,including Java 8 and later versions, J2EE,and the
+            Spring framework.
+            I have a strong track record of designing and implementing RESTful APIs,optimizing database performance,
+            and practicing test-driven development (TDD) with tools like JUnit.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>7 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>7 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>7 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>7 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>E-CommerceMart</h3>
+            <ul>
+              <li>E-CommerceMart is a Java web application that simulates an online marketplace.It allows users to browse
+                and purchase a wide variety of products, add items to their shopping carts,and complete secure transactions.
+                Sellers can register, list their products, and manage their inventory.The application includes features like 
+                product search, reviews, and user authentication for a complete e-commerce experience.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>SocialConnect</h3>
+            <ul>
+              <li>SocialConnect is a Java web application designed to create a social networking platform. 
+                Users can create profiles, connect with friends, post updates, and engage in conversations.
+                The application includes features like friend requests, messaging, notifications, and privacy settings. 
+                It's an ideal project for learning Java web development with a focus on userinteractions and real-time communication.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>HospitalManagement</h3>
+            <ul>
+              <li>HospitalManagement is a Java web application developed for hospital administration and patient management.
+                It provides functionalities such as appointment scheduling, patient registration, electronic health records (EHR) management, and billing.
+                 The application also supports roles for doctors, nurses, and administrators with specific privileges. 
+               It's a comprehensive project for healthcare-related web applications, involving data security and management.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Dana played a key role in our e-commerce project, showcasing strong Java development skills. 
+          Her clean coding style and dedication significantly contributed to the project's success. 
+          She is a reliable team player, always ready to go the extra mile."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Dana has been an awesome experience. 
+          She is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Dana during the initial phase of our venture which needed Web development. 
+          She is a committed resource who has in depth knowledge about the domain. 
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+<div class="iconbutton">
+  <a class="topmenu" href="#home"><img src="C:\Users\vrshe\OneDrive\Desktop\html_finalProject\html_finalprojimages\uparrow.png"></img></a>
+        
+</div>
+<div class="popup" id="popup" class="flex_center">
+  <img src="C:\Users\vrshe\OneDrive\Desktop\html_finalProject\html_finalprojimages\checkmark.png"/>
+  <h3>Thanks for the Recommentation</h3>
+  <button onclick="showPopup(false)">Ok</button>
+</div>
+</body>
+</html>
